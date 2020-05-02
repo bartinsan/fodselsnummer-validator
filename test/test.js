@@ -4,7 +4,7 @@ const describe = mocha.describe;
 
 let script = require('../script');
 
-describe('-- Testing av logikk i script.js for å validere fødselsnummer --', function () {
+describe('TESTING AV LOGIKK FOR Å VALIDERE FØDSELSNUMMER', function () {
 
 
     describe('saniterNummer_tester:', function() {
@@ -70,7 +70,8 @@ describe('-- Testing av logikk i script.js for å validere fødselsnummer --', f
             });
         });
 
-        describe('Individnummer er større enn eller lik 500 og mindre enn eller lik 999, og fødselsår er større enn eller lik 00 og mindre enn eller lik 39, ' +
+        describe('Individnummer er større enn eller lik 500 og mindre enn eller lik 999, ' +
+            'og fødselsår er større enn eller lik 00 og mindre enn eller lik 39, ' +
             ' men fødselsdato er høyere enn dagens dato.', function () {
 
             let testDato = new Date();
@@ -97,6 +98,45 @@ describe('-- Testing av logikk i script.js for å validere fødselsnummer --', f
             let testNummer = '01012152011';
             it('Bør returnere "false" når individnummer er større enn eller lik 500 og mindre enn eller lik 749, men fødselsår er mindre enn 54', function () {
                 assert.strictEqual(script.splittOgSjekkIndividnummer(testNummer), false);
+            });
+        });
+
+    });
+
+    describe('validerKontrollsiffer_tests', function () {
+
+        describe('Sjekksum for k1 er 10', function () {
+            let testNummer = '12128611711';
+            it('Bør returnere "false" når sjekksum for k1 er 10', function () {
+                assert.strictEqual(script.validerKontrollsiffer(testNummer), false);
+            });
+        });
+
+        describe('Sjekksum for for k1 er ikke lik k1', function () {
+            let testNummer = '12128611211';
+            it('Bør returnere "false" sjekksum for k1 ikke er lik k1', function () {
+                assert.strictEqual(script.validerKontrollsiffer(testNummer), false);
+            });
+        });
+
+        describe('Sjekksum for k2 er 10', function () {
+            let testNummer = '12128611371';
+            it('Bør returnere "false" når sjekksum for k2 er 10', function () {
+                assert.strictEqual(script.validerKontrollsiffer(testNummer), false);
+            });
+        });
+
+        describe('Sjekksum for k2 er ikke lik k2', function () {
+            let testNummer = '12128632943';
+            it('Bør returnere "false" når sjekksum for k2 er 10', function () {
+                assert.strictEqual(script.validerKontrollsiffer(testNummer), false);
+            });
+        });
+
+        describe('Sjekksum for begge kontrollsiffer er gyldige.', function () {
+            let testNummer = '12128632946';
+            it('Bør returnere "true" når sjekksum for begge kontrollsiffer er gyldige.', function () {
+                assert.strictEqual(script.validerKontrollsiffer(testNummer), true);
             });
         });
 
