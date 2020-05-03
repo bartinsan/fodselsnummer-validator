@@ -8,7 +8,7 @@ Utviklet av Martin Sandvik ved hjelp av:
 - mocha.js
 
 ##Bruk
-- ``npm init`` for å laste inn/oppdatere node_modules.
+- ``npm install`` for å laste inn node_modules.
 - ``npm start`` for å starte serveren.
 - Åpne applikasjonen i nettleseren: [http://localhost:3000](http://localhost:3000)
 - ``npm test`` for å kjøre tester i kommandolinje.
