@@ -34,14 +34,14 @@ form {
     height: 90vh;
 }
 
-.separator-line {
+.separator-linje {
     flex: 0 0 auto;
     background: linear-gradient(-90deg, aliceblue, darkslategray, aliceblue);
     width: 15em;
     height: 1px;
 }
 
-.status-area {
+.status-omrade {
 
 }
 
