@@ -1,13 +1,18 @@
 {
   "name": "fodselsnummer-validator",
   "version": "1.0.0",
-  "description": "",
+  "description": "Applikasjon som validerer norske fødselsnummer.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bartinsan/fodselsnummer-validator.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Martin Sandvik",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^7.1.2"
