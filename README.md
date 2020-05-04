@@ -10,7 +10,7 @@ Utviklet av Martin Sandvik ved hjelp av:
 ##Bruk
 - ``npm install`` for å laste inn node_modules.
 - ``npm start`` for å starte serveren.
-- Åpne applikasjonen i nettleseren: [http://localhost:3000](http://localhost:3000)
+- Åpne applikasjonen i nettleseren: [http://127.0.0.1:3000](http://127.0.0.1:3000)
 - ``npm test`` for å kjøre tester i kommandolinje.
 
 
