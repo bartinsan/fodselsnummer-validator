@@ -31,8 +31,8 @@ JavaScript-rammeverk i arbeidslivet.
 
 For meg er god kodekvalitet at koden er lett å lese og forstå. 
 Kortest mulig kode er ikkje nødvendigvis best kode, spesielt om andre skal sjå på den.
-Å ha beskrivende og navn på funksjoner, variabler og argumenter er viktig, samt å kommentere med supplerende info. 
-Lange funksjoner med endeløse nests av løkker og spørringer som er tunge å lese, kan som oftes deles inn i mindre funskjoner. 
+Å ha beskrivende navn på funksjoner, variabler og argumenter er viktig, samt å kommentere med supplerende info. 
+Lange funksjoner med endeløse nests av løkker og spørringer som er tunge å lese, kan som oftes deles inn i mindre funksjoner.
 
 >Hvorfor vil du jobbe i NAV?
 
