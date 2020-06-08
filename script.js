@@ -1,4 +1,10 @@
 function saniterNummer(nummerStreng) {
+    if (nummerStreng === undefined) {
+        return false;
+
+
+    }
+
     if (nummerStreng.length !== 11) {
         return false;
     }
