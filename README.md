@@ -1,4 +1,5 @@
 # fodselsnummer-validator
+## Om applikasjonen
 En simpel web-applikasjon for å validerer norske fødselsnummer.
 
 Utviklet av Martin Sandvik ved hjelp av:
@@ -7,19 +8,19 @@ Utviklet av Martin Sandvik ved hjelp av:
 - express.js
 - mocha.js
 
-##Bruk
+## Bruk
 - ``npm install`` for å laste inn node_modules.
 - ``npm start`` for å starte serveren.
 - Åpne applikasjonen i nettleseren: [http://127.0.0.1:3000](http://127.0.0.1:3000)
 - ``npm test`` for å kjøre tester i kommandolinje.
 
 
-##Videre utvikling
+## Videre utvikling
 Planlagte implementeringer/oppdateringer:
 - Sjekke om datoer er gyldige
 - Dekke D-nummer og H-nummer
 
-##Spørsmål og svar
+## Spørsmål og svar
 >Hva er ditt favorittprogrammeringsspråk, og hvorfor?
 
 For tida liker eg godt å programmere rein JavaScript, då det er dette er jobbar mest med i bachelorprosjektet mitt.
@@ -30,8 +31,8 @@ JavaScript-rammeverk i arbeidslivet.
 
 For meg er god kodekvalitet at koden er lett å lese og forstå. 
 Kortest mulig kode er ikkje nødvendigvis best kode, spesielt om andre skal sjå på den.
-Å ha beskrivende og navn på funksjoner, variabler og argumenter er viktig, samt å kommentere med supplerende info. 
-Lange funksjoner med endeløse nests av løkker og spørringer som er tunge å lese, kan som oftes deles inn i mindre funskjoner. 
+Å ha beskrivende navn på funksjoner, variabler og argumenter er viktig, samt å kommentere med supplerende info. 
+Lange funksjoner med endeløse nests av løkker og spørringer som er tunge å lese, kan som oftes deles inn i mindre funksjoner.
 
 >Hvorfor vil du jobbe i NAV?
 
